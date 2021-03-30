@@ -2,7 +2,7 @@ import logger from '../helpers/logger';
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  logger( 'My App' )
+  logger.error( 'My App' )
   return <Component {...pageProps} />
 }
 

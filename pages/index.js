@@ -4,12 +4,12 @@ import logger from '../helpers/logger'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  logger('Home');
+  logger.debug('Home');
 
   useEffect(() => {
-    logger('Home mounted');
+    logger.info('Home mounted');
     return() => {
-      logger('Home un-mounted');
+      logger.debug('Home un-mounted');
 
     };
   }, []);
