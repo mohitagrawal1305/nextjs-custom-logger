@@ -8,8 +8,8 @@ function MyApp({ Component, pageProps }) {
 
 MyApp.getInitialProps = async (ctx) => {
  
-  const isLogsEnabled = ctx?.router?.query?.debug || '';
-	global.isLogsEnabled = isLogsEnabled === 'true';
+  const areLogsEnabled = ctx?.router?.query?.debug || '';
+	global.areLogsEnabled = areLogsEnabled === 'true';
   return {};
 }
 

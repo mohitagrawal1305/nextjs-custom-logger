@@ -27,7 +27,7 @@ export default function Home() {
 
         <div className={styles.grid}>
         {
-          global.isLogsEnabled ? (
+          global.areLogsEnabled ? (
             <a href="/" className={styles.disable}>
             <p>Click here to disable logging</p>
           </a>
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
 
         {
-          global.isLogsEnabled && (
+          global.areLogsEnabled && (
             <p> Please open dev tools to see custom logs </p>
           )
         }
